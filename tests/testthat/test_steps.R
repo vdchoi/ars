@@ -1,10 +1,3 @@
-# Set working directory to be in the tests folder
-#setwd('/Users/vicchoi/Documents/Classes/github_berkeley/stat-243-proj/tests')
-
-library(testthat)
-source('../utils.R')
-source('../steps.R')
-
 test_that("Initialization gives x values at correctly spaced points", {
   g1 <- function (x) {
     return(x^2)

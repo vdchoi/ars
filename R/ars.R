@@ -1,8 +1,3 @@
-# setting working directory to the file location
-# setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-# source('data_utils.R')
-# source('steps.R')
-
 #' Adaptive Rejection Sampler
 #'
 #' Sample from a log-concave density function，potentially unnormalized,

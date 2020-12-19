@@ -1,5 +1,3 @@
-# Test file for the function "verify_concavity"
-
 test_that("Test that density with bounded integral passes", {
   
   # Example function that has a positive finite integral
@@ -51,7 +49,6 @@ test_that("Test that density with unbounded integral fails (2)", {
 
 
 # Test file for the function "verify_log_concavity"
-
 test_that("Test that log-concave function passes (1)", {
 
   # Example function that is log-concave
@@ -99,20 +96,6 @@ test_that("Test that log-concave function passes (3)", {
   
 })
 
-
-test_that("Test that log-concave function passes (3)", {
-  
-  # Sin
-  f <- function(x) {
-    return(0.50*sin(x))
-  }
-  
-  # Get output
-  res <- verify_log_concavity(f, 0.0, pi)
-  
-  expect_true(res)
-  
-})
 
 
 test_that("Test that not log-concave function fails", {
@@ -177,3 +160,4 @@ test_that("Test that non-positive density fails", {
   expect_false(res)
   
 })
+

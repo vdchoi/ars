@@ -1,10 +1,3 @@
-library(assertthat)
-library(testthat)
-source('../function_checks.R')
-source('../utils.R')
-source('../steps.R')
-source('../ars.R')
-
 test_that("Test ARS on standard normal distribution, 
           comparing mean/std with theoretical values 0/1", {
   set.seed(1)

@@ -1,10 +1,3 @@
-library(testthat)
-source('../utils.R')
-# 
-# test_that("Dummpy", {
-#   expect_true(TRUE)
-# })
-
 test_that("The upper bound and lower bound hold for a finite domain pdf function (x squared)", {
   g1 <- function (x) {
     return(x^2)
