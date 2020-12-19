@@ -1,6 +1,3 @@
-library(numDeriv)
-library(docstring)
-
 init_abscissa <- function(h, a, b, init_k = 20) {
   #' Initialize Abscissas
   #'
