@@ -1,4 +1,5 @@
 test_that("Initialization gives x values at correctly spaced points", {
+  print("Initialization gives x values at correctly spaced points")
   g1 <- function (x) {
     return(x^2)
   }
@@ -16,6 +17,7 @@ test_that("Initialization gives x values at correctly spaced points", {
 
 
 test_that("A sample from a normal gives mean of roughly 0", {
+  print("A sample from a normal gives mean of roughly 0")
   set.seed(1)
   g2 <- function (x) {
     return(dnorm(x))
@@ -37,6 +39,7 @@ test_that("A sample from a normal gives mean of roughly 0", {
 })
 
 test_that("Test that the update function correctly adds values and sorts", {
+  print("Test that the update function correctly adds values and sorts")
   set.seed(1)
   g2 <- function (x) {
     return(dnorm(x))

@@ -1,5 +1,6 @@
 test_that("Test that density with bounded integral passes", {
   
+  print("Test that density with bounded integral passes")
   # Example function that has a positive finite integral
   
   # Normal distribution with mean 20.00 and stdev of 5.00
@@ -17,6 +18,7 @@ test_that("Test that density with bounded integral passes", {
 
 test_that("Test that density with unbounded integral fails", {
   
+  print("Test that density with unbounded integral fails")
   # Abs(tan(x)) from 0 to pi theoretically integrates to Inf!
   
   f <- function(x) {
@@ -33,6 +35,7 @@ test_that("Test that density with unbounded integral fails", {
 
 test_that("Test that density with unbounded integral fails (2)", {
   
+  print("Test that density with unbounded integral fails (2)")
   # Abs(tan(x)) from 0 to pi theoretically integrates to Inf!
   
   f <- function(x) {
@@ -50,7 +53,7 @@ test_that("Test that density with unbounded integral fails (2)", {
 
 # Test file for the function "verify_log_concavity"
 test_that("Test that log-concave function passes (1)", {
-
+  print("Test that log-concave function passes (1)")
   # Example function that is log-concave
 
   # Normal distribution with mean 20.00 and stdev of 5.00
@@ -66,7 +69,7 @@ test_that("Test that log-concave function passes (1)", {
 })
 
 test_that("Test that log-concave function passes (2)", {
-  
+  print("Test that log-concave function passes (2)")
   # Example function that is log-concave
   
   # Linear
@@ -83,7 +86,7 @@ test_that("Test that log-concave function passes (2)", {
 
 
 test_that("Test that log-concave function passes (3)", {
-  
+  print("Test that log-concave function passes (3)")
   # Sin
   f <- function(x) {
     return(0.50*sin(x))
@@ -99,7 +102,7 @@ test_that("Test that log-concave function passes (3)", {
 
 
 test_that("Test that not log-concave function fails", {
-  
+  print("Test that not log-concave function fails")
   # Example function that is not log-concave
   g <- function(x) {
     return(4.00^x)
@@ -113,7 +116,7 @@ test_that("Test that not log-concave function fails", {
 })
 
 test_that("Test that not log-concave function fails (2)", {
-  
+  print("Test that not log-concave function fails (2)")
   # Example function that is not log-concave
   # Sum of two Gaussians
   f <- function(x) {
@@ -131,7 +134,7 @@ test_that("Test that not log-concave function fails (2)", {
 })
 
 test_that("Test that not log-concave function fails (3)", {
-  
+  print("Test that not log-concave function fails (3)")
   # Example function that is not log-concave
   f <- function(x) {
     return(
@@ -147,7 +150,7 @@ test_that("Test that not log-concave function fails (3)", {
 })
 
 test_that("Test that non-positive density fails", {
-  
+  print("Test that non-positive density fails")
   # Example function that evaluates to non-positive values
   
   f <- function(x) {

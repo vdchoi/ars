@@ -1,5 +1,7 @@
 test_that("Test ARS on standard normal distribution, 
           comparing mean/std with theoretical values 0/1", {
+  
+  print('Test ARS on standard normal distribution')
   set.seed(1)
   g <- function (x) {
     return(dnorm(x))
@@ -13,6 +15,8 @@ test_that("Test ARS on standard normal distribution,
 
 test_that("Test ARS on the (unnormalized) square function distribution (D = [0,1]), 
           comparing mean, std with theoretical values 3/4, 1/4 * sqrt(3/5)", {
+  
+  print('Test ARS on the (unnormalized) square function distribution')
   set.seed(1)
   g <- function (x) {
     return(x^2)
@@ -26,6 +30,7 @@ test_that("Test ARS on the (unnormalized) square function distribution (D = [0,1
 
 test_that("Test ARS on the sine function distribution (D = (0,pi), 
           comparing mean, std with theoretical values pi/2, 1/2 * sqrt(-8 + pi^2)", {
+  print('Test ARS on the sine function distribution')        
   set.seed(1)
   g <- function (x) {
     return(sin(x))
@@ -38,6 +43,8 @@ test_that("Test ARS on the sine function distribution (D = (0,pi),
 })
 
 test_that("Test ARS on a density function that is not bounded (g(x) = 1, D = (-Inf, 1))", {
+  
+  print('Test ARS on an unbounded density function') 
   g <- function (x) {
     return(1)
   }
@@ -46,6 +53,7 @@ test_that("Test ARS on a density function that is not bounded (g(x) = 1, D = (-I
 })
 
 test_that("Test ARS on a density function that is not log-concave", {
+  print('Test ARS on a density function that is not log-concave')      
   g <- function (x) {
     return()
   }

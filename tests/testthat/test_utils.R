@@ -1,4 +1,5 @@
 test_that("The upper bound and lower bound hold for a finite domain pdf function (x squared)", {
+  print("The upper bound and lower bound hold for a finite domain pdf function (x squared)")
   g1 <- function (x) {
     return(x^2)
   }
@@ -18,6 +19,7 @@ test_that("The upper bound and lower bound hold for a finite domain pdf function
 })
 
 test_that("The upper bound and lower bound hold in a infinite domain pdf function (normal)", {
+  print("The upper bound and lower bound hold in a infinite domain pdf function (normal)")
   g2 <- function (x) {
     return(dnorm(x))
   }
