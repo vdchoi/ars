@@ -2,7 +2,6 @@
 # setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # source('data_utils.R')
 # source('steps.R')
-library(assertthat)
 
 #' Adaptive Rejection Sampler
 #'
