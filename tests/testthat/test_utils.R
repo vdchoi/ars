@@ -6,10 +6,9 @@ test_that("The upper bound and lower bound hold for a finite domain pdf function
     return(log(g1(x)))
   }
 
-  init_abscissa(h1, 1, 2)
   data1 <- initialization_step(h1, 1, 2)
 
-  test_x <- seq(1, 2, length.out=50)
+  test_x <- seq(1, 2, length.out=20)
   test_hx <- sapply(test_x, h1)
   test_uk <- sapply(test_x, uk, data=data1)
   test_lk <- sapply(test_x, lk, data=data1)
@@ -27,10 +26,9 @@ test_that("The upper bound and lower bound hold in a infinite domain pdf functio
     return(log(g2(x)))
   }
 
-  init_abscissa(h2, -Inf, Inf)
   data2 <- initialization_step(h2, -Inf, Inf)
 
-  test_x <- seq(-10, 10, length.out=50)
+  test_x <- seq(-10, 10, length.out=20)
   test_hx <- sapply(test_x, h2)
   test_uk <- sapply(test_x, uk, data=data2)
   test_lk <- sapply(test_x, lk, data=data2)
