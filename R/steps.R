@@ -1,6 +1,3 @@
-library(docstring)
-library(assertthat)
-
 initialization_step <- function (h, a, b) {
   #' Initialize Step
   #'
