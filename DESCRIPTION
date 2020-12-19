@@ -2,7 +2,8 @@ Package: ars
 Title: Adaptive Rejection Sampler
 Version: 1.0.0.0
 Authors@R: 
-    person(given = "Zhuang, John, and Victor")
+    person("Victor Zhuang John", "Choi Liu Vouvakis Manousakis", email = "first.last@example.com",
+                  role = c("aut", "cre"))
 Description: Adaptive Rejection Sampler Project
 License: `use_mit_license()`, `use_gpl3_license()` or friends to
     pick a license
