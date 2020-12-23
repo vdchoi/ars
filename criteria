@@ -1,0 +1,56 @@
+Grade: 91
+
+## ease of accessing package, help, tests:
+
+Fine, but reliance on numDeriv not indicated.
+
+## main help page:
+
+Fine.
+
+## quality of user interface:
+
+Ok, but would be good to have defaults for a and b. 
+Also use of n_per_step doesn't follow the algorithm as presented in Gilks.
+
+No ability for user to provide initial abscissae.
+
+## performance on my tests:
+
+Succeeds on one truncated normal and gamma density, fails with untrapped errors on another truncated normal and narrow normal density centered at 40. Fails with incorrect detection of non-log-concavity on double exponential.
+
+I think it's passing standard normal, but there are some small p-values.
+
+## t density output:
+
+Errors out with message about divergent integral. Not properly trapping non-log-concavity.
+
+## presence of tests:
+
+Tests pass.
+
+Tests of a few distributions, but it would be better to use something like the K-S test rather than checking moments. Some unit tests, though none that seem to test numerical correctness. 
+
+## code efficiency:
+
+Very fast with default n_per_step, but note concern about n_per_step.
+
+Not nearly as fast with n_per_step=1 (3 sec for 5000 samples). One could set things up to not recompute the upper hull information if no points added to abscissae.  
+
+## comments in code:
+
+Good
+
+## code organization/clarity/elegance:
+
+Generally easy to follow.
+
+Good to have the various initial checks but as seen in t density example, your check for integrability is not robust. And as seen with a couple examples, your test for log-concavity is not robust.
+
+## equality of workload:
+
+Good; glad you spent time pair programming.
+
+## writeup:
+
+Nice graphical illustrations. Would be nice to see results for some examples.
